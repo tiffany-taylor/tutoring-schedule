@@ -1,0 +1,53 @@
+#calendar_container {	position:relative;	margin:0 auto;	width:800px;	height:700px;	border: 1px solid #000000;}
+p.t-head {	font-family:Georgia, 'Times New Roman', serif;	text-align:center; 	border-bottom:1px solid #000000;	height:16%;	padding:0;	margin:0; font-weight: bold; font-size: 110%;}
+
+#times p.t-head{ text-align:left;}
+#times{	position: absolute;	height:100%;	width:100%;	font-family:Arial, Verdana, sans-serif;}
+.time {	width:100%;	height:3%;	margin-top:-1px;	border-top: 1px solid #000000;}
+
+.day {	position:absolute;	height:100%;	width:18%;	border:1px solid #000000;	border-width:1px 1px 0px 0px;	margin:-1px -1px 0px 0px;}
+.first-day{	border-left:1px solid #000000;}
+
+/*5 day week = 18% starting at 10%*/
+.monday	{ left:10%; }
+.tuesday	{ left:28%;}
+.wednesday{ left:46%;}
+.thursday	{ left:64%;}
+.friday	{ left:82%;}
+
+.room{	position:absolute;	left:0%;	top:0%;	width:50%;	height:100%}
+.room + .room {	left:50%;}
+.room p.t-head {	position:absolute;	text-align:center;	width:100%;	height:6%;	top:10%;	border-top:1px solid #000000; margin-top:-1px;}
+.room + .room p.t-head { border-left:1px solid #000000;	margin-left:-1px;}
+
+.event {	position:absolute;	width:100%;	background-color:#ccccff;	border:1px solid #000000;	margin:-1px; text-align: center; text-decoration: none; color: black; display: block; font-family: Arial, Verdana, sans-serif}
+.event:link {color: black;}
+.event:visited {color: black;}
+.event:hover {background-color: #aaf; color: black; margin: 1px; cursor: default;}
+.event:active {color:black;}
+
+.half-hour	{ height:3%; } .one-hour 	{ height:6%; }
+.one-half-hour	{ height:9%; }	.two-hour 	{ height:12%;}
+.two-half-hour	{ height:15%;}	.three-hour{height:18%;}
+.three-half-hour {height:21%;}	.four-hour {height:24%;}
+
+.h_0800 { top: 16%;}	.h_0830 { top: 19%;}
+.h_0900 { top: 22%;}	.h_0930 { top: 25%;}
+.h_1000 { top: 28%;}	.h_1030 { top: 31%;}
+.h_1100 { top: 34%;}	.h_1130 { top: 37%;}
+.h_1200 { top: 40%;}	.h_1230 { top: 43%;}
+.h_1300 { top: 46%;}	.h_1330 { top: 49%;}
+.h_1400 { top: 52%;}	.h_1430 { top: 55%;}
+.h_1500 { top: 58%;}	.h_1530 { top: 61%;}
+.h_1600 { top: 64%;}	.h_1630 { top: 67%;}
+.h_1700 { top: 70%;}	.h_1730 { top: 73%;}
+.h_1800 { top: 76%;}	.h_1830 { top: 79%;}
+.h_1900 { top: 82%;}	.h_1930 { top: 85%;}
+.h_2000 { top: 88%;}	.h_2030 { top: 91%;}
+.h_2100 { top: 94%;}	.h_2130 { top: 100%;}
+
+.closed {	background-color:#000000;	color:#ffffff; position: absolute; width: 100%; display: block;}
+.subjects {background-color: #ddf; display: block; z-index: 100; font-family: "Arial, Verdana, sans-serif"; font-size: 110%; width: 15%; border: 1px solid #000; padding: 3px; margin: 1px;position: absolute; font-size: 90%;}
+.subjects dl {margin:0;}
+.subjects dt {font-weight: bold; font-size: 110%; display:block; }
+.subjects dd {margin-left: 10px;}
