@@ -1,4 +1,4 @@
-#calendar_container {	
+#calendar_container{	
   position: relative;	
   margin: 0 auto;	
   width: 800px;	
@@ -6,7 +6,7 @@
   border: 1px solid #000000;
 }
 
-p.t-head {	
+p.t-head{	
   font-family: Georgia, 'Times New Roman', serif;	
   text-align: center; 	
   border-bottom: 1px solid #000000;	
@@ -26,14 +26,14 @@ p.t-head {
   width: 100%;	
   font-family: Arial, Verdana, sans-serif;
 }
-.time {	
+.time{	
   width: 100%;	
   height: 3%;	
   margin-top: -1px;	
   border-top: 1px solid #000000;
 }
 
-.day {	
+.day{	
   position: absolute;	
   height: 100%;	
   width: 18%;	
@@ -72,7 +72,7 @@ p.t-head {
 .room + .room{	
   left: 50%;
 }
-.room p.t-head {	
+.room p.t-head{	
   position: absolute;	
   text-align: center;	
   width: 100%;	
@@ -81,7 +81,7 @@ p.t-head {
   border-top: 1px solid #000000; 
   margin-top: -1px;
 }
-.room + .room p.t-head { 
+.room + .room p.t-head{ 
   border-left: 1px solid #000000;	
   margin-left: -1px;
 }
